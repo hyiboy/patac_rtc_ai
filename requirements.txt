@@ -1,0 +1,12 @@
+# RTC 项目依赖 - 部署时执行: pip install -r requirements.txt
+# Python 建议 3.8+
+
+# HTTP 请求 (ai_client.py)
+requests>=2.28.0
+
+# YAML 配置解析 (config.yaml, workflow.py, ai_client.py, rtc_utils.py)
+PyYAML>=6.0
+
+# 浏览器自动化 (rtc_utils.py)
+# 安装后需执行: playwright install  以安装浏览器驱动
+playwright>=1.40.0

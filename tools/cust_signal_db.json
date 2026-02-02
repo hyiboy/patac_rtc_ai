@@ -1,0 +1,810 @@
+[
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "ACCESS_MODE_EASY_ENTRY_SEAT_CUSTOMIZATION",
+    "propertyID": "557858952",
+    "read-signal": "AcsMdEtryStCstCurSetVal",
+    "write-signal": "AcsMdEtryStCstChgSetReqVCUSrc",
+    "avail-signal": "AcsMdEtryStCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "ADAPTIVE_CRUISE_CONTROL_AUTO_SET_SPEED_CUSTOMIZATION",
+    "propertyID": "557858816",
+    "read-signal": "ACCAutoSetSpdCustCrntStngVal",
+    "write-signal": "ACCAutoSetSpdCstChgSetReq",
+    "avail-signal": "ACCAutoSetSpdCustStngAvlbl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "ADAPTIVE_CRUISE_CONTROL_ROUTE_SPEED_ADAPTATION_CUSTOMIZATION",
+    "propertyID": "557858817",
+    "read-signal": "ACCRteSpdAdptCustCrntStngVal",
+    "write-signal": "ACCRteSpdAdptCstChgSetReq",
+    "avail-signal": "ACCRteSpdAdptCustStngAvlbl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "ADAS_BETA_MODE_CUSTOMIZATION",
+    "propertyID": "557859150",
+    "read-signal": "ADASBetModCstCrStVal",
+    "write-signal": "ADASBetModCstChgSetReq",
+    "avail-signal": "ADASBetModCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "ADAS_PERFORMANCE_MODE_CUSTOMIZATION",
+    "propertyID": "557858818",
+    "read-signal": "ADASPerfMdCustCrntStngVal",
+    "write-signal": "ADASPerfMdCstChgSetReq",
+    "avail-signal": "ADASPerfMdCustStngAvlbl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AIR_QUALITY_SENSOR_CUSTOMIZATION",
+    "propertyID": "557850700",
+    "read-signal": "AirQltySnsCstCrStVal",
+    "write-signal": "AirQltySensCstChgSetReq",
+    "avail-signal": "AirQltySnsCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "APPROACH_TO_OPEN_CUSTOMIZATION",
+    "propertyID": "557858921",
+    "read-signal": "AprchToOpnCsCrStVal",
+    "write-signal": "AprchToOpnCsChgSetReq",
+    "avail-signal": "AprchToOpnCsStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AUTOMATIC_COOLED_SEAT_CUSTOMIZATION",
+    "propertyID": "557850702",
+    "read-signal": "AutoCoolStCstCrStVal",
+    "write-signal": "AutoCoolStCstChgSetReq",
+    "avail-signal": "AutoCoolStCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AUTOMATIC_DEFOG_CUSTOMIZATION",
+    "propertyID": "557850703",
+    "read-signal": "AutoDfgCstCrStVal",
+    "write-signal": "AutoDfgCstChgSetReq",
+    "avail-signal": "AutoDfgCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "AUTOMATIC_DEHUMIDIFICATION_CUSTOMIZATION",
+    "propertyID": "557859220",
+    "read-signal": "AutodhmdfctnCstCurrSetVal",
+    "write-signal": "AutodhmdfctnCstChgSetReq",
+    "avail-signal": "AutodhmdfctnCstSetAval"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AUTOMATIC_DRIVE_LOCKING_CUSTOMIZATION",
+    "propertyID": "557850645",
+    "read-signal": "AutDrvLckCstCurSetVal",
+    "write-signal": "AutDrvLckCstChgSetReq",
+    "avail-signal": "AutDrvLckCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "AUTOMATIC_EMERGENCY_BRAKING_ALARM_SENSITIVITY_CUSTOMIZATION",
+    "propertyID": "557859004",
+    "read-signal": "AEBArtSensCurrSetVal",
+    "write-signal": "AEBArtSensCstChgStReq",
+    "avail-signal": "AEBArtSensCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AUTOMATIC_FAN_CUSTOMIZATION",
+    "propertyID": "557850704",
+    "read-signal": "AutoFanCstCrStVal",
+    "write-signal": "AutoFanCstChgSetReq",
+    "avail-signal": "AutoFanCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AUTOMATIC_HEATED_SEAT_CUSTOMIZATION",
+    "propertyID": "557850705",
+    "read-signal": "AutoHtdStCstCrStVal",
+    "write-signal": "AutoHtdStCstChgSetReq",
+    "avail-signal": "AutoHtdStCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "AUTOMATIC_HUMIDIFICATION_CUSTOMIZATION",
+    "propertyID": "557859221",
+    "read-signal": "AutohmdfctnCstCurrSetVal",
+    "write-signal": "AutohmdfctnCstChgSetReq",
+    "avail-signal": "AutohmdfctnCstSetAval"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AUTOMATIC_UNLOCKING_CUSTOMIZATION",
+    "propertyID": "557850648",
+    "read-signal": "AutUnlckCstCurSetVal",
+    "write-signal": "AutUnlckCstChgSetReq",
+    "avail-signal": "AutUnlckCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "AUTO_APPLY_EPB_CUSTOMIZATION",
+    "propertyID": "557858826",
+    "read-signal": "AutoAppEPBCstCurSetVal",
+    "write-signal": "AutoAppEPBCstChgSetReq",
+    "avail-signal": "AutoAppEPBCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "AUTO_CLOSE_MOVABLE_WINDOW_DRIVING_CUSTOMIZATION",
+    "propertyID": "557858827",
+    "read-signal": "AutoClsDrvCstCurSetVal",
+    "write-signal": "AutoClsDrvCstChgSetReq",
+    "avail-signal": "AutoClsDrvCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "AUTO_CLOSE_MOVABLE_WINDOW_REMOTE_CUSTOMIZATION",
+    "propertyID": "557858828",
+    "read-signal": "AutoClsRmtCurSetVal",
+    "write-signal": "AutoClsRmtCstChgSetReq",
+    "avail-signal": "AutoClsRmtCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "AUTO_HIGH_BEAM_ASSIST_CUSTOMIZATION",
+    "propertyID": "557858830",
+    "read-signal": "AutHgBmAsCsCrStVal",
+    "write-signal": "AutHgBmAsCsChgSetReq",
+    "avail-signal": "AutHgBmAsCsStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AUTO_MIRROR_FOLD_CUSTOMIZATION",
+    "propertyID": "557850647",
+    "read-signal": "AutoFoldCstCrStVal",
+    "write-signal": "AutoFoldCusRqt",
+    "avail-signal": "AutoFoldlrtCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "AUTO_REAR_WIPE_CUSTOMIZATION",
+    "propertyID": "557850649",
+    "read-signal": "AutoRrWpCstCurSetVal",
+    "write-signal": "AutoRrWpCstChgSetReq",
+    "avail-signal": "AutoRrWpCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "AUTO_SET_SPEED_TOLERANCE_CUSTOMIZATION",
+    "propertyID": "557858998",
+    "read-signal": "AutoSetSpdTOLCustCrntStngVal",
+    "write-signal": "AutoSetSpdTOLCstChgSetReq",
+    "avail-signal": "AutoSetSpdTOLCustStngAvlbl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "CABIN_AIR_QUALITY_CONTROL_CUSTOMIZATION",
+    "propertyID": "557858833",
+    "read-signal": "CbnAirQltyCtrlCstCrStVal",
+    "write-signal": "CbnAirQltyCtrlCstChgSetReq",
+    "avail-signal": "CbnAirQltyCtrlCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "COLLISION_PREPARATION_SYSTEM_CUSTOMIZATION",
+    "propertyID": "557858834",
+    "read-signal": "ColPrSysCsCrStVal",
+    "write-signal": "ColPrSysCstChgSetReq",
+    "avail-signal": "ColPrSysCsStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "CONSTANT_OXYGEN_CONCENTRATION_CUSTOMIZATION",
+    "propertyID": "557859222",
+    "read-signal": "CstnOxgnCnctratCstCurrSetVal",
+    "write-signal": "CstnOxgnCnctratCstChgSetReq",
+    "avail-signal": "CstnOxgnCnctratCstSetAval"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "CUSTOM_MODE_AVH_DEFAULT_STATUS_CUSTOMIZATION",
+    "propertyID": "557858894",
+    "read-signal": "CustMdAVHDftStsCstmCurSetVal",
+    "write-signal": "CustMdAVHDftStsCstmChngSetReq",
+    "avail-signal": "CustMdAVHDftStsCstmSetAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "CUSTOM_MODE_BRAKE_PEDAL_CUSTOMIZATION",
+    "propertyID": "557850677",
+    "read-signal": "CustMdBrkPdlCstmCurSetVal",
+    "write-signal": "CustMdBrkPdlCstChngSetReq",
+    "avail-signal": "CustMdBrkPdlCstmCurSetAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "CUSTOM_MODE_STEERING_CUSTOMIZATION",
+    "propertyID": "557850683",
+    "read-signal": "CustMdStrCstmCurSetVal",
+    "write-signal": "CustMdStrCstChngSetReq",
+    "avail-signal": "CustMdStrCstmSetAv"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "CUSTOM_MODE_SUSPENSION_CUSTOMIZATION",
+    "propertyID": "557850682",
+    "read-signal": "CustMdSpnCstCurSetVal",
+    "write-signal": "CustMdSpnCstChgSetReq",
+    "avail-signal": "CustMdSpnCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "DAYTIME_FRONT_AND_TAIL_LIGHTS_CUSTOMIZATION",
+    "propertyID": "557858965",
+    "read-signal": "DaytimeFrtTlLghtsCstCurSetVal",
+    "write-signal": "DayTmFrtTlLtsCstChgSetReq",
+    "avail-signal": "DaytimeFrtTlLghtsCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "DAYTIME_TAIL_LIGHTS_CUSTOMIZATION",
+    "propertyID": "557850650",
+    "read-signal": "DaytimeTlLghtsCstCurSetVal",
+    "write-signal": "DayTmTlLtsCstChgSetReq",
+    "avail-signal": "DaytimeTlLghtsCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "DOOR_OPENING_WARNING_ASSIST_CUSTOMIZATION",
+    "propertyID": "557858934",
+    "read-signal": "DrOpnWrngAstCustCrntStngVal",
+    "write-signal": "DrOpnWrngAstCstChgSetReq",
+    "avail-signal": "DrOpnWrngAstCustStngAvlbl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "DOOR_OPENING_WARNING_CUSTOMIZATION",
+    "propertyID": "557858839",
+    "read-signal": "DrOpnWrngCustCrntStngVal",
+    "write-signal": "DrOpnWrngCstChgSetReq",
+    "avail-signal": "DrOpnWrngCustStngAvlbl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "DRIVER_ALERT_TYPE_CUSTOMIZATION",
+    "propertyID": "557850627",
+    "read-signal": "HSP_DrvAlrtTypCstCurrSetValAuth",
+    "write-signal": "DrvrAlrtTypCstChgStReq",
+    "avail-signal": "DrvrAlrtTypCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "DRIVER_MONITORING_SYSTEM_DROWSY_AND_INATTENTIVE_DRIVER_CUSTOMIZATION",
+    "propertyID": "557858967",
+    "read-signal": "DMSDrwIntnDrvrCstCurrSetVal",
+    "write-signal": "DMSDrwIntnDrvrCstChgStReq",
+    "avail-signal": "DMSDrwIntnDrvrCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "EASY_EXIT_CUSTOMIZATION",
+    "propertyID": "557850651",
+    "read-signal": "EsyExtCstCrStVal",
+    "write-signal": "EsyExtCstChgSetReq",
+    "avail-signal": "EsyExtCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "EXIT_LIGHTING_CUSTOMIZATION",
+    "propertyID": "557850652",
+    "read-signal": "ExtLghtCstCurSetVal",
+    "write-signal": "ExitLghtngCstChgSetReq",
+    "avail-signal": "ExtLghtCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "FALSE_ACCELERATION_SUPPRESSION_CUSTOMIZATION",
+    "propertyID": "557859123",
+    "read-signal": "FASCustCrntStngVal",
+    "write-signal": "FASCustChngStReq",
+    "avail-signal": "FASCustStAvail"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "FRONT_NANOE_X_CONTROL_CUSTOMIZATION",
+    "propertyID": "557859217",
+    "read-signal": "FrtNanoeXCtrlCstCrStVal",
+    "write-signal": "FrtNanoeXCtrlCstChgSetReq",
+    "avail-signal": "FrtNanoeXCtrlCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "FRONT_PCM_RESPONSE_TYPE_CUSTOMIZATION",
+    "propertyID": "557850628",
+    "read-signal": "FrntPCMRspTypCstCrStVal",
+    "write-signal": "FrntPCMRspTypCstChgSetReq",
+    "avail-signal": "FrntPCMRspTypCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "GO_NOTIFIER_CUSTOMIZATION",
+    "propertyID": "557850630",
+    "read-signal": "GoNotfrCstCrStVal",
+    "write-signal": "GoNotfrCstChgSetReq",
+    "avail-signal": "GoNotfrCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "HANDS_FREE_LEFT_SLIDING_DOOR_CUSTOMIZATION",
+    "propertyID": "557858940",
+    "read-signal": "HadsFreeLtSlDrCsCrStVal",
+    "write-signal": "HadsFreeLtSlDrCsChgSetReq",
+    "avail-signal": "HadsFreeLtSlDrCsStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "HANDS_FREE_REAR_CLOSURE_CUSTOMIZATION",
+    "propertyID": "557858941",
+    "read-signal": "HadsFreeRrClCrStVal",
+    "write-signal": "HadsFreeRrClCsChgSetReq",
+    "avail-signal": "HadsFreeRrClCsStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "HANDS_FREE_RIGHT_SLIDING_DOOR_CUSTOMIZATION",
+    "propertyID": "557858942",
+    "read-signal": "HadsFreeRhSlDrCsCrStVal",
+    "write-signal": "HadsFreeRhSlDrCsChgSetReq",
+    "avail-signal": "HadsFreeRhSlDrCsStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "HEADLAMP_MANUAL_LEVELING_CUSTOMIZATION",
+    "propertyID": "557859168",
+    "read-signal": "HdlmpMnlLvlgCstCrStVal",
+    "write-signal": "HdlmpMnlLvlgCstChgSetReq",
+    "avail-signal": "HdlmpMnlLvlgCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "HIGH_VOLTAGE_BATTERY_PRECONDITIONING_CUSTOMIZATION",
+    "propertyID": "557859215",
+    "read-signal": "HVBattPrcndtngCstCurrSetVal",
+    "write-signal": "HVBattPrcndtngCstChgSetReq",
+    "avail-signal": "HVBattPrcndtngCstSetAval"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "HIGH_VOLTAGE_BATTERY_TEMPERATURE_MAINTENANCE_CUSTOMIZATION",
+    "propertyID": "557859216",
+    "read-signal": "HVBattTempMaintCstCurrSetVal",
+    "write-signal": "HVBattTempMaintCstChgSetReq",
+    "avail-signal": "HVBattTempMaintCstSetAval"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "HVAC_REMOTE_START_SETTING_CUSTOMIZATION",
+    "propertyID": "557858847",
+    "read-signal": "HVACRmtStrtStCstCurSetVal",
+    "write-signal": "HVACRmtStrtStCstChgSetReq",
+    "avail-signal": "HVACRmtStrtStCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "INTELLIGENT_DRIVING_LIGHT_MODE_CUSTOMIZATION",
+    "propertyID": "557859213",
+    "read-signal": "IDLMdCstmztnCrntStgVal",
+    "write-signal": "IDLMdCstChgSetReq",
+    "avail-signal": "IDLMdCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "INTELLIGENT_DRIVING_SYSTEM_MODE_CUSTOMIZATION",
+    "propertyID": "557858973",
+    "read-signal": "IDSMdCstCurrSetVal",
+    "write-signal": "IDSMdCstChgStReq",
+    "avail-signal": "IDSMdCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "INTERSECTION_COLLISION_MITIGATION_CUSTOMIZATION",
+    "propertyID": "557858974",
+    "read-signal": "ICMCstCurrSetVal",
+    "write-signal": "ICMCstChgStReq",
+    "avail-signal": "ICMCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "IONIZER_CONTROL_CUSTOMIZATION",
+    "propertyID": "557850707",
+    "read-signal": "IonzrCtrlCstCrStVal",
+    "write-signal": "IonzrCtrlCstChgSetReq",
+    "avail-signal": "IonzrCtrlCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "LANE_CENTERING_ADAPTIVE_OFFSET_CUSTOMIZATION",
+    "propertyID": "557858849",
+    "read-signal": "LnCntrAdpOfstCustCrntStngVal",
+    "write-signal": "LnCntrAdpOfstCstChgSetReq",
+    "avail-signal": "LnCntrAdpOfstCustStngAvlbl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "LANE_CHANGE_ALERT_CUSTOMIZATION",
+    "propertyID": "557850632",
+    "read-signal": "LnChgAlrtCstCrStVal",
+    "write-signal": "LCACusRqt",
+    "avail-signal": "LnChgAlrtCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "LANE_CHANGE_BY_COMMAND_CUSTOMIZATION",
+    "propertyID": "557858851",
+    "read-signal": "LnchByCmdCsCrStVal",
+    "write-signal": "LnchByCmdCstChgSetReq",
+    "avail-signal": "LnchByCmdCsStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "LANE_DETECTION_WARNING_AND_CONTROL_CUSTOMIZATION",
+    "propertyID": "557858852",
+    "read-signal": "LnDtWrnCntrlCustCrntStngVal",
+    "write-signal": "LnDtWrnCntrlCstChgSetReq",
+    "avail-signal": "LnDtWrnCntrlCustStngAvlbl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "LAST_DOOR_CLOSED_LOCKING_CUSTOMIZATION",
+    "propertyID": "557850655",
+    "read-signal": "LDCLCstCurSetVal",
+    "write-signal": "LDCLCstChgSetReq",
+    "avail-signal": "LDCLCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "LOCKING_CLOSING_CUSTOMIZATION",
+    "propertyID": "557859022",
+    "read-signal": "LckClsCstCurSetVal",
+    "write-signal": "LckClsCstChgSetReq",
+    "avail-signal": "LckClsCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "NAVIGATION_ON_ADAS_CUSTOMIZATION",
+    "propertyID": "557858854",
+    "read-signal": "NOACustCrntStngVal",
+    "write-signal": "NOACstChgSetReq",
+    "avail-signal": "NOACustStngAvlbl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "NAVIGATION_ON_ADAS_LANE_CHANGE_TYPE_CUSTOMIZATION",
+    "propertyID": "557858855",
+    "read-signal": "NOALnChngTypCustCrntStngVal",
+    "write-signal": "NOALnChngTypCstChgSetReq",
+    "avail-signal": "NOALnChngTypCustStngAvlbl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "NAVIGATION_ON_ADAS_TEXT_TO_SPEACH_CUSTOMIZATION",
+    "propertyID": "557858918",
+    "read-signal": "NOATTSCustCrntStngVal",
+    "write-signal": "NOATTSCstChgSetReq",
+    "avail-signal": "NOATTSCustStngAvlbl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "ONE_PEDAL_DRIVING_CUSTOMIZATION",
+    "propertyID": "557850726",
+    "read-signal": "OnePedDrvCstCurrSetVal",
+    "write-signal": "OnePedDrvCstChgSetReq",
+    "avail-signal": "OnePedDrvCstSetAval"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "OPEN_DOOR_ANTI_LOCK_OUT_CUSTOMIZATION",
+    "propertyID": "557850657",
+    "read-signal": "OpDrAtLOCstCurSetVal",
+    "write-signal": "OpDrAtLOCstChgSetReq",
+    "avail-signal": "OpDrAtLOCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "OSRVM_COMFORT_FOLD_CUSTOMIZATION",
+    "propertyID": "557858857",
+    "read-signal": "OSRVMCftFoldCstCrStVal",
+    "write-signal": "OSRVMCftFoldCusRqt",
+    "avail-signal": "OSRVMCftFoldlrtCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "PARK_ASSIST_ON_OFF_CUSTOMIZATION",
+    "propertyID": "557850633",
+    "read-signal": "PrkAsstONOFFCstCrStVal",
+    "write-signal": "PrkAsstOnOffCstChgSetReq",
+    "avail-signal": "PrkAsstONOFFCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "PASSIVE_UNLOCKING_CUSTOMIZATION",
+    "propertyID": "557850660",
+    "read-signal": "PsvUnlckCstCurSetVal",
+    "write-signal": "PsvUnlckCstChgSetReq",
+    "avail-signal": "PsvUnlckCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "PDM_BRAKE_CLOSE_CUSTOMIZATION",
+    "propertyID": "557858981",
+    "read-signal": "PDMBrkClsCsCrStVal",
+    "write-signal": "PDMBrkClsCsChgSetReq",
+    "avail-signal": "PDMBrkClsCsStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "PDM_OPERATION_MODE_CUSTOMIZATION",
+    "propertyID": "557858950",
+    "read-signal": "PDMOpModeCsCrStVal",
+    "write-signal": "PDMOpModeCsChgSetReq",
+    "avail-signal": "PDMOpModeCsStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "PEDESTRIAN_FRIENDLY_ALERT_SOUND_SELECTION_CUSTOMIZATION",
+    "propertyID": "557858951",
+    "read-signal": "PFASndSeltnCstCurrSetVal",
+    "write-signal": "PFASndSeltnCstChgSetReq",
+    "avail-signal": "PFASndSeltnCstSetAval"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "POWER_REAR_CLOSURE_CUSTOMIZATION",
+    "propertyID": "557850661",
+    "read-signal": "PwrRrClsrCstCurrSetVal",
+    "write-signal": "PwrRrClsrCstChgSetReq",
+    "avail-signal": "PwrRrClsrCstSetAval"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "RAIN_SENSE_CUSTOMIZATION",
+    "propertyID": "557850668",
+    "read-signal": "RnSnsCstCurSetVal",
+    "write-signal": "RnSnsCstChgSetReq",
+    "avail-signal": "RnSnsCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REAR_CROSS_TRAFFIC_ALERT_CUSTOMIZATION",
+    "propertyID": "557850635",
+    "read-signal": "RrCrsTrfcAlrtCstCrStVal",
+    "write-signal": "RCTACusRqt",
+    "avail-signal": "RrCrsTrfcAlrtCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "REAR_CROSS_TRAFFIC_ASSIST_CUSTOMIZATION",
+    "propertyID": "557858863",
+    "read-signal": "RCTAstCstCurSetVal",
+    "write-signal": "RCTAstCstChgSetReq",
+    "avail-signal": "RCTAstCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REAR_DEFOG_STARTUP_CUSTOMIZATION",
+    "propertyID": "557850711",
+    "read-signal": "RrDfgStUpCstCrStVal",
+    "write-signal": "RrDfgStUpCstChgSetReq",
+    "avail-signal": "RrDfgStUpCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "REAR_NANOE_X_CONTROL_CUSTOMIZATION",
+    "propertyID": "557859218",
+    "read-signal": "RrNanoeXCtrlCstCrStVal",
+    "write-signal": "RrNanoeXCtrlCstChgSetReq",
+    "avail-signal": "RrNanoeXCtrlCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "REAR_PEDESTRIAN_COLLISION_MITIGATION_RESPONSE_TYPE_CUSTOMIZATION",
+    "propertyID": "557858986",
+    "read-signal": "RrPCMRspTypCstCurrSetVal",
+    "write-signal": "RrPCMRspTypCstChgStReq",
+    "avail-signal": "RrPCMRspTypCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REAR_SEAT_REMINDER_ENABLE_DISABLE_CUSTOMIZATION",
+    "propertyID": "557850712",
+    "read-signal": "RrStRmndrEnblDsblCstCurrSetVal",
+    "write-signal": "RrStRmndrEnblDsblCstChgSetReq",
+    "avail-signal": "RrStRmndrEnblDsblCstSetAval"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "REAR_VIRTUAL_BUMPER_CUSTOMIZATION",
+    "propertyID": "557858866",
+    "read-signal": "RVBCustCrntStngVal",
+    "write-signal": "RVBCstChgSetReq",
+    "avail-signal": "RVBCustStngAvlbl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REAR_ZONE_STARTUP_CUSTOMIZATION",
+    "propertyID": "557850713",
+    "read-signal": "RrZnStUpCstCrStVal",
+    "write-signal": "RrZnStUpCstChgSetReq",
+    "avail-signal": "RrZnStUpCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "RELOCK_REMOTE_UNLOCKED_DOOR_CUSTOMIZATION",
+    "propertyID": "557850665",
+    "read-signal": "RlkRtUlkDrCstCrSetVal",
+    "write-signal": "RlkRtUlkDrCstChSetReq",
+    "avail-signal": "RlkRtUlkDrCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REMOTE_IN_VEHICLE_REMINDER_CUSTOMIZATION",
+    "propertyID": "557850662",
+    "read-signal": "RemInVehRmndrCstCurSetVal",
+    "write-signal": "RemInVehRmCstChgSetReq",
+    "avail-signal": "RemInVehRmndrCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REMOTE_LEFT_VEHICLE_REMINDER_CUSTOMIZATION",
+    "propertyID": "557850663",
+    "read-signal": "RemLftVehRmndrCstCurSetVal",
+    "write-signal": "RemLftVehRmCstChgSetReq",
+    "avail-signal": "RemLftVehRmndrCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REMOTE_LOCKING_FEEDBACK_CUSTOMIZATION",
+    "propertyID": "557850671",
+    "read-signal": "RtLkFdbkCstCurSetVal",
+    "write-signal": "RtLkFdbkCstChgSetReq",
+    "avail-signal": "RtLkFdbkCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REMOTE_START_COOLED_SEAT_CUSTOMIZATION",
+    "propertyID": "557850709",
+    "read-signal": "RmtStrtCoolStCstCrStVal",
+    "write-signal": "RmtStrtCoolStCstChgSetReq",
+    "avail-signal": "RmtStrtCoolStCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REMOTE_START_HEATED_SEAT_CUSTOMIZATION",
+    "propertyID": "557850710",
+    "read-signal": "RmtStrtHtdStCstCrStVal",
+    "write-signal": "RmtStrtHtdStCstChgSetReq",
+    "avail-signal": "RmtStrtHtdStCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "REMOTE_START_HEAT_STEERING_WHEEL_CUSTOMIZATION",
+    "propertyID": "557858874",
+    "read-signal": "RmtStrtHtStrWhlCstCrStVal",
+    "write-signal": "RmtStrtHtStrWhlCstChgSetReq",
+    "avail-signal": "RmtStrtHtStrWhlCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REMOTE_UNLOCK_LIGHTING_FEEDBACK_CUSTOMIZATION",
+    "propertyID": "557850672",
+    "read-signal": "RtUlkLtFbCstCurSetVal",
+    "write-signal": "RtUlkLtFbCstChgSetReq",
+    "avail-signal": "RtUlkLtFbCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REMOTE_WINDOW_OPERATION_CUSTOMIZATION",
+    "propertyID": "557850667",
+    "read-signal": "RmtWndOpCstCurSetVal",
+    "write-signal": "RemWndOpCstChgSetReq",
+    "avail-signal": "RmtWndOpCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "REVERSE_TILT_MIRROR_CUSTOMIZATION",
+    "propertyID": "557850664",
+    "read-signal": "RevTltMirCstCurSetVal",
+    "write-signal": "RevTltMrCstChgSetReq",
+    "avail-signal": "RevTltMirCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "SELECTIVE_UNLOCKING_CUSTOMIZATION",
+    "propertyID": "557850673",
+    "read-signal": "SelUlkCstCurSetVal",
+    "write-signal": "SelUlkCstChgSetReq",
+    "avail-signal": "SelUlkCstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "SIDE_BLIND_ZONE_ALERT_CUSTOMIZATION",
+    "propertyID": "557850638",
+    "read-signal": "SBZAlrtCstCrStVal",
+    "write-signal": "SBZAlrtCstChngSetReq",
+    "avail-signal": "SBZAlrtCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "SMART_HYBRID_ENERGY_MANAGEMENT_CUSTOMIZATION",
+    "propertyID": "557859106",
+    "read-signal": "SmrtHybEngMngtCstCurrSetVal",
+    "write-signal": "SmrtHybEngMngtCstChgSetReq",
+    "avail-signal": "SmrtHybEngMngtCstSetAval"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "SUPER_STEERING_CUSTOMIZATION",
+    "propertyID": "557859064",
+    "read-signal": "SprstrCstmCurSetVal",
+    "write-signal": "SprstrCstmChngSetReq",
+    "avail-signal": "SprstrCstmSetAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "THE_FRONT_GRILLE_AND_LOGO_LAMP_CUSTOMIZATION",
+    "propertyID": "557859219",
+    "read-signal": "FntGrllLogoLmpCstmztnChngCntSttngVal",
+    "write-signal": "FntGrllLogoLmpCstmztnChngSttngRqst",
+    "avail-signal": "FntGrllLogoLmpCstmztnChngSttngAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "TRAFFIC_LIGHT_AND_STOP_LINE_CONTROL_CUSTOMIZATION",
+    "propertyID": "557858881",
+    "read-signal": "TrfcLgtStpLnCntrlCustCrntStngVal",
+    "write-signal": "TrfcLgtStpLnCntrlCstChgSetReq",
+    "avail-signal": "TrfcLgtStpLnCntrlCustStngAvlbl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "TRAFFIC_SIGN_MEMORY_CUSTOMIZATION",
+    "propertyID": "557858882",
+    "read-signal": "TSMCstCurSetVal",
+    "write-signal": "TSMCstChgSetReq",
+    "avail-signal": "TSMCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "TURN_LAMP_ASSIST_CUSTOMIZATION",
+    "propertyID": "557859214",
+    "read-signal": "TLACstCrStVal",
+    "write-signal": "TLACstChgSetReq",
+    "avail-signal": "TLACstStAvl"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "VEHICLE_LOCATOR_LIGHTS_CUSTOMIZATION",
+    "propertyID": "557850674",
+    "read-signal": "VehLctrLghtsCstCurSetVal",
+    "write-signal": "VehLctrLtsCstChgSetReq",
+    "avail-signal": "VehLctrLghtsCstStAvl"
+  },
+  {
+    "propertyType": "PatacProperty",
+    "propertyName": "VENTING_MODE_CUSTOMIZATION",
+    "propertyID": "557859193",
+    "read-signal": "VentMdCstCurrSetVal",
+    "write-signal": "VentMdCstChgSetReq",
+    "avail-signal": "VentMdCstSetAval"
+  },
+  {
+    "propertyType": "VendorProperty",
+    "propertyName": "WALK_AWAY_LOCKING_CUSTOMIZATION",
+    "propertyID": "557850675",
+    "read-signal": "WlkAwyLckCstCurSetVal",
+    "write-signal": "WlkAwyLckCstChgSetReq",
+    "avail-signal": "WlkAwyLckCstStAvl"
+  }
+]
