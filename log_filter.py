@@ -4,6 +4,12 @@ from pathlib import Path
 from pathlib import Path
 from typing import List
 from concurrent.futures import ProcessPoolExecutor, as_completed
+import logging
+
+from logger_config import setup_logger
+
+# 初始化 logger
+logger = setup_logger("RTC.LogFilter")
 
 # ================= 配置区域 =================
 SEARCH_DIR = r'log/1224111/33333gmlogger_2025_12_15_13_48_13/Aoutput'
@@ -27,7 +33,7 @@ def search_line_in_file(search_dir: str, pattern_str: str, output_filename: str)
     """
     search_path = Path(search_dir)
     if not search_path.is_dir():
-        print(f"不是有效目录: {search_dir}")
+        logger.error(f"不是有效目录: {search_dir}")
         return None
 
     output_path = search_path / output_filename
@@ -44,16 +50,16 @@ def search_line_in_file(search_dir: str, pattern_str: str, output_filename: str)
                     if pattern.search(line):
                         matched_lines.append(line.rstrip('\n'))
         except Exception as e:
-            print(f"读取失败 {file_path}: {e}")
+            logger.warning(f"读取失败 {file_path}: {e}")
 
     if not matched_lines:
-        print("没有匹配到任何日志")
+        logger.warning("没有匹配到任何日志")
         return None
 
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write('\n'.join(matched_lines) + '\n')
 
-    print(f"共匹配 {len(matched_lines)} 行，已保存至: {output_path}")
+    logger.info(f"共匹配 {len(matched_lines)} 行，已保存至: {output_path}")
     return str(output_path)
 
 # def search_line_in_file(file_path, pattern_str):
@@ -121,13 +127,13 @@ def extract_lines_by_regex_to_dir(search_dir: str, regex_pattern: str, output_fi
 
     search_path = Path(search_dir)
     if not search_path.is_dir():
-        print(f"错误：{search_dir} 不是有效目录")
+        logger.error(f"错误：{search_dir} 不是有效目录")
         return None
 
     output_path = search_path / output_filename
-    print(f"开始搜索目录: {search_path}")
-    print(f"匹配正则  : {regex_pattern}")
-    print(f"结果将保存至: {output_path}")
+    logger.info(f"开始搜索目录: {search_path}")
+    logger.debug(f"匹配正则  : {regex_pattern}")
+    logger.info(f"结果将保存至: {output_path}")
 
     all_matched_lines = []
 
@@ -140,17 +146,17 @@ def extract_lines_by_regex_to_dir(search_dir: str, regex_pattern: str, output_fi
                     if pattern.search(line):
                         matched.append(line.rstrip('\n'))
         except Exception as e:
-            print(f"读取文件失败 {file_path}: {e}")
+            logger.warning(f"读取文件失败 {file_path}: {e}")
         return matched
 
     # 收集所有文件
     files = [p for p in search_path.rglob('*') if p.is_file()]
 
     if not files:
-        print("目录下没有找到任何文件")
+        logger.warning("目录下没有找到任何文件")
         return None
 
-    print(f"找到 {len(files)} 个文件，开始并行处理...")
+    logger.info(f"找到 {len(files)} 个文件，开始并行处理...")
 
     with ProcessPoolExecutor() as executor:
         futures = [executor.submit(process_file, f) for f in files]
@@ -161,24 +167,24 @@ def extract_lines_by_regex_to_dir(search_dir: str, regex_pattern: str, output_fi
                 all_matched_lines.extend(lines)
 
     if not all_matched_lines:
-        print("没有找到任何匹配的行")
+        logger.warning("没有找到任何匹配的行")
         return None
 
     # 保存结果
     try:
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(all_matched_lines) + '\n')
-        print(f"提取完成，共 {len(all_matched_lines)} 行，已保存至：{output_path}")
+        logger.info(f"提取完成，共 {len(all_matched_lines)} 行，已保存至：{output_path}")
         return str(output_path)
     except Exception as e:
-        print(f"保存结果失败: {e}")
+        logger.error(f"保存结果失败: {e}", exc_info=True)
         return None
 
 def main():
     path_obj = Path(SEARCH_DIR)
     files = [p for p in path_obj.rglob('*') if p.is_file()]
 
-    print(f"开始提取整行数据，目标文件数: {len(files)}...")
+    logger.info(f"开始提取整行数据，目标文件数: {len(files)}...")
 
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f_out:
         with ProcessPoolExecutor() as executor:
@@ -190,11 +196,11 @@ def main():
                     # 批量写入，效率更高
                     f_out.write('\n'.join(lines) + '\n')
 
-    print(f"提取完成！结果已存入: {OUTPUT_FILE}")
+    logger.info(f"提取完成！结果已存入: {OUTPUT_FILE}")
 
 
 if __name__ == '__main__':
     # main()
     properties = extract_property_names_from_file("log/1247841/comments.txt")
     for p in properties:
-        print(p)
+        logger.info(p)

@@ -1,0 +1,89 @@
+flowchart TD
+    A[开始执行pull_logs_filter_by_property]
+    B[RTC拉取并解压，得到Aoutput路径列表]
+    C{是否获取到Aoutput路径?}
+    D[加载property-signal数据库]
+    E{是否加载到数据库?}
+    F[初始化valid_property_names_set为空集合]
+    G[从数据库中提取有效property名称集合]
+    H[遍历每个Aoutput目录]
+    I{当前路径是否为有效目录?}
+    J[推导bug目录和bug_id]
+    K{comments.txt是否存在?}
+    L[从comments.txt提取propertyName列表]
+    M{是否提取到propertyName?}
+    N[过滤出在数据库中存在映射的propertyName]
+    O{是否有有效propertyName?}
+    P[构建日志搜索模式]
+    Q[使用pattern筛选日志]
+    R{筛选是否成功?}
+    S[移动结果文件到bug根目录]
+    T[添加到结果文件列表]
+    U[记录筛选结果]
+    V[手动创建空结果文件]
+    W[添加空结果文件到列表]
+    X{是否启用AI分析且有结果文件?}
+    Y[获取AI客户端实例]
+    Z{是否成功获取AI客户端?}
+    AA[遍历每个结果文件]
+    BB{结果文件是否存在?}
+    CC[读取comments最新内容]
+    DD[读取筛选后的日志内容]
+    EE[查找property的signal映射]
+    FF[格式化映射数据]
+    GG[构建AI分析请求]
+    HH[调用AI分析]
+    II[保存AI分析结果]
+    JJ[记录AI分析结果]
+    KK[返回结果文件列表]
+    LL[结束流程]
+    
+    A --> B
+    B --> C
+    C -->|否| LL
+    C -->|是| D
+    D --> E
+    E -->|否| F
+    E -->|是| G
+    F --> H
+    G --> H
+    H --> I
+    I -->|否| H
+    I -->|是| J
+    J --> K
+    K -->|否| H
+    K -->|是| L
+    L --> M
+    M -->|否| H
+    M -->|是| N
+    N --> O
+    O -->|否| H
+    O -->|是| P
+    P --> Q
+    Q --> R
+    R -->|是| S
+    R -->|否| V
+    S --> T
+    T --> U
+    V --> W
+    W --> U
+    U --> H
+    H --> X
+    X -->|否| KK
+    X -->|是| Y
+    Y --> Z
+    Z -->|否| KK
+    Z -->|是| AA
+    AA --> BB
+    BB -->|否| AA
+    BB -->|是| CC
+    CC --> DD
+    DD --> EE
+    EE --> FF
+    FF --> GG
+    GG --> HH
+    HH --> II
+    II --> JJ
+    JJ --> AA
+    AA --> KK
+    KK --> LL

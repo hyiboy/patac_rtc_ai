@@ -14,7 +14,17 @@ import requests
 import yaml
 from typing import Optional, Tuple
 
-logger = logging.getLogger("CAN-AI-JIRA")
+try:
+    from logger_config import setup_logger
+    logger = setup_logger("RTC.AIClient")
+except ImportError:
+    # 如果 logger_config 不存在，使用默认 logger
+    logger = logging.getLogger("RTC.AIClient")
+    if not logger.handlers:
+        handler = logging.StreamHandler()
+        handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+        logger.addHandler(handler)
+        logger.setLevel(logging.INFO)
 
 CONSISTENCY_SYSTEM = f"""
     你是一名资深智能座舱 VHAL（Vehicle HAL）开发工程师。你的任务是根据用户输入的上层提供的评论、安卓日志与 property和can信号的对应关系，严格依据以下固定规则进行趋势匹配、对齐窗口查找、上下行一致性分析与异常反馈判断。所有分析必须完全基于输入数据，不得引用规则外信息。
@@ -602,13 +612,13 @@ class AIClient:
 
 if __name__ == "__main__":
     config_path = "config.yaml"
-    print("------")
+    logger.debug("------")
     if not os.path.exists(config_path):
         raise FileNotFoundError(f"配置文件不存在")
     with open(config_path, "r") as f:
         cfg = yaml.safe_load(f)
         ai_config = cfg["ai"]
-    print("------")
+    logger.debug("------")
     ai = AIClient(
         base_url = ai_config["base_url"],
         api_key= ai_config["api_key"],
@@ -620,7 +630,7 @@ if __name__ == "__main__":
         proxies=ai_config.get("proxies")
     )
     ai_e = ai.chat(ROLE2, COMMENT2)
-    print(ai_e)
+    logger.info(ai_e)
 
     # ai_extract = ai.chat("你是一个日志分析师, 帮我分析一下下面这段日志","2025-10-29 14:59:02.121 BoschVehicleHal 557891756 1   2025-10-29 14:58:51.961 VehicleService 0X2140C0AD 0X1    2023-01-01 00:00:32.262 VehicleService 0X214002D7 值变化了2次，第一次lost，[0:00:09:189 - 0:00:04:680 = 4.509秒]之后变为0")
     # print(f"ai_extract ： {ai_extract}")
