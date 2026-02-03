@@ -35,6 +35,7 @@ def setup_logger(
     if logger.handlers:
         return logger
 
+    logger.propagate = False
     logger.setLevel(getattr(logging, log_level.upper(), logging.INFO))
 
     # 日志格式

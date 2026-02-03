@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-这是一个自动化日志分析工具，专门用于分析和处理智能座舱VHAL（Vehicle HAL）相关的RTC（Rational Team Concert）工单。该工具能够自动从SAIC-GM的RTC系统中拉取工单信息，下载附件日志，解析并筛选与特定Property相关的日志，最后通过AI进行深度分析。
+这是一个自动化日志分析工具，专门用于分析和处理智能座舱VHAL（Vehicle HAL）相关的RTC工单。该工具能够自动从RTC系统中拉取工单信息，下载附件日志，解析并筛选与特定Property相关的日志，最后通过AI进行深度分析。
 
 ## 主要功能
 
@@ -181,11 +181,3 @@ python tools/simpleDB.py
 ### 修改AI提示模板
 
 编辑 `prompt.py` 文件可以调整AI分析的行为和输出格式。
-
-## 贡献
-
-欢迎提交Issue和Pull Request来改进此工具。
-
-## 许可证
-
-请参阅LICENSE文件。

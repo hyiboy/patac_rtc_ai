@@ -206,7 +206,7 @@ def extract_and_save_comments(page, bug_id, target_dir):
         # 最新一条评论单独保存，供 AI 分析使用
         latest_file = os.path.join(target_dir, COMMENTS_LATEST_FILE)
         if valid_texts:
-            latest_text = valid_texts[0]
+            latest_text = valid_texts[4]
             with open(latest_file, 'w', encoding='utf-8') as f:
                 # f.write(f"Bug ID: {bug_id}\n")
                 # f.write("最新评论（1 条）\n")

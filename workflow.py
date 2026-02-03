@@ -100,9 +100,9 @@ def pull_logs_filter_by_property(
     5. （可选）发 AI 分析：最新评论 + 有效映射 + 筛选日志
     """
     # Step 1: RTC 拉取并解压，得到所有 Aoutput 路径
-    aoutput_paths = rtc_utils.run_rtc_process_and_get_aoutput_paths()
+    # aoutput_paths = rtc_utils.run_rtc_process_and_get_aoutput_paths()
     # aoutput_paths = ["C:\\Personal\\work\\agent\\rtc_demo\\log\\1251508\\gmlogger_2026_1_27_14_26_5\\Aoutput"]
-    # aoutput_paths = ["C:\\Personal\\work\\agent\\rtc_demo\\log\\1251601\\gmlogger_log_20260125105711\\Aoutput"]
+    aoutput_paths = ["C:\\Personal\\work\\agent\\rtc_demo\\log\\1251601\\gmlogger_log_20260125105711\\Aoutput"]
     # aoutput_paths = ["C:\\Personal\\work\\agent\\rtc_demo\\log\\1232668\\gmlogger_2025_12_29_17_18_36\\Aoutput"]
     # aoutput_paths = ["C:\\Personal\\work\\agent\\rtc_demo\\log\\1252781\\gmlogger_2026_1_28_16_10_22\\Aoutput",
                     #  "C:\\Personal\\work\\agent\\rtc_demo\\log\\1252781\\gmlogger_2026_1_28_16_35_28\\Aoutput"]
@@ -163,7 +163,7 @@ def pull_logs_filter_by_property(
             continue
 
         logger.info(f"Bug {bug_id}: 提取到 {len(all_properties)} 个 property，过滤后保留 {len(filtered_properties)} 个有效 property")
-        logger.debug(f"Bug {bug_id}: 有效 property: {', '.join(filtered_properties)}")
+        logger.info(f"Bug {bug_id}: 有效 property: {', '.join(filtered_properties)}")
 
         # Step 4: 用过滤后的 propertyName 做日志筛选
         # pattern = "|".join(re.escape(p) for p in filtered_properties)
@@ -250,7 +250,7 @@ def pull_logs_filter_by_property(
                 logger.debug(f"Bug {bug_id}: 准备发送给 AI 的数据:")
                 logger.debug(f"Bug {bug_id}: System Prompt 长度: {len(system_prompt)} 字符")
                 logger.debug(f"Bug {bug_id}: User Message 长度: {len(user_msg)} 字符")
-                logger.debug(f"Bug {bug_id}: User Message 内容:\n{user_msg}")
+                logger.info(f"Bug {bug_id}: User Message 内容:\n{user_msg}")
                 logger.info(f"Bug {bug_id}: 开始调用 AI 分析...")
 
                 try:
@@ -265,4 +265,8 @@ def pull_logs_filter_by_property(
     return result_files
 
 if __name__ == '__main__':
+    # logger = logging.getLogger("RTC.Workflow")
+    # for handler in logger.handlers:
+    #     if isinstance(handler, logging.StreamHandler):
+    #         handler.setLevel(logging.DEBUG)
     pull_logs_filter_by_property()  # 拉取 log → 按 propertyName 筛选 → 结果保存到各 Bug 目录

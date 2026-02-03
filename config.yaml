@@ -1,9 +1,9 @@
 ai:
   base_url: "http://wx8vm00005.apac.bosch.com:30001"
-#  api_key: "9tQSrDP98+KjXWEqeVs5pG7sSnVbhIkJMp9nOcSRvU5+yCQ4Rq7q+nNgh0yQMEcqUA0QicozFryuMSSwYMXMkZ4wnqSKBaQ01OGQeOyGXuaxuccMg9h4W2F6OxdpWIi1bk2Jy8MVKRg75Ze/ehIjZmlUAjSu8iq1LF+i7vOjlgo="
   api_key: "/qUnCk0WbEY9vPxXiVSUDzL16KR6sDkGduDb1wVSrwikZUicfvblksT8VN3FrrvzP/lSCIcV5I0xhIbe65+kUN//oYhW3EmdCdEfhyZjOcirike6AnqAB4QQQr9su9xtmpu9hlZIlV0jVvyVQfnvvA=="
   model: "Qwen3-32B-FP16"
 
+#rtc的账号密码
 credentials:
   username: "pysxou"
   password: "Qq123456"
@@ -14,6 +14,3 @@ rtc:
   query_url: "https://peedp.saic-gm.com/ccm/web/projects/VCS_Info4.0_High_Platform_PATAC_RTC#action=com.ibm.team.workitem.viewQueries&tab=owned&queryItemId=_H_9bgEcrEfCbnbTmwG4kVg&queryAction=com.ibm.team.workitem.runSavedQuery"
   # 7-Zip 可执行文件路径，用于解压附件中的压缩包
   seven_zip_path: "C:\\Program Files\\7-Zip\\7z.exe"
-
-
-#  /qUnCk0WbEY9vPxXiVSUDzL16KR6sDkGduDb1wVSrwikZUicfvblksT8VN3FrrvzP/lSCIcV5I0xhIbe65+kUN//oYhW3EmdCdEfhyZjOcirike6AnqAB4QQQr9su9xtmpu9hlZIlV0jVvyVQfnvvA==
