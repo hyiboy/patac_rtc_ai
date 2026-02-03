@@ -1,5 +1,8 @@
 # encoding=utf-8
+import re
 from typing import List
+# import os
+# os.environ["PLAYWRIGHT_BROWSERS_PATH"] = r"C:\Users\CSE3WX\AppData\Local\ms-playwright"
 
 from playwright.sync_api import Playwright, sync_playwright
 import os
@@ -90,7 +93,8 @@ def login(page, username, password):
     try:
         page.locator("#jazz_app_internal_LoginWidget_0_userId").fill(username)
         page.locator("#jazz_app_internal_LoginWidget_0_password").fill(password)
-        page.locator("//div[.='Log In']").click()
+        page.get_by_role("button", name=re.compile(r"(Log\s*In|登录|登入)", re.IGNORECASE)).click()
+        # page.locator("//div[.='Log In']").click()
         page.wait_for_timeout(3000)
     except Exception as e:
         logger.error(f"登录页面元素定位失败: {e}", exc_info=True)
@@ -473,6 +477,7 @@ def run_rtc_process_and_get_aoutput_paths() -> List[str]:
                 )
                 page.wait_for_selector(
                     '#com_ibm_team_workitem_web_ui_internal_view_editor_WorkItemEditorHeader_0',
+                    state='attached',
                     timeout=30000
                 )
             except Exception as e:
